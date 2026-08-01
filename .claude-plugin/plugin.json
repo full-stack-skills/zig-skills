@@ -1,7 +1,7 @@
 {
   "name": "zig-skills",
-  "version": "1.0.0",
-  "description": "Zig language skills",
+  "version": "1.1.0",
+  "description": "Zig language and lossless Java-to-Zig migration skills",
   "author": {
     "name": "PartMe.AI",
     "email": "partmeai@gmail.com"
@@ -19,6 +19,8 @@
     "./skills/zig-http",
     "./skills/zig-json",
     "./skills/zig-project-structure",
+    "./skills/zig-java-migration",
+    "./skills/zig-java-migration-testing",
     "./skills/zig-testing",
     "./skills/zig-tiger-style",
     "./skills/zig-raylib",

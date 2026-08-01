@@ -20,7 +20,7 @@ English | [简体中文](./README.zh-CN.md)
 
 **Zig Skills** is a curated collection of Agent Skills for AI coding agents focused on the [Zig programming language](https://ziglang.org) and its ecosystem, part of the [Full Stack Skills](https://github.com/partme-ai/full-stack-skills) ecosystem maintained by [PartMe.AI](https://github.com/partme-ai).
 
-This package includes **13 skills** organized into four layers: **Core Language** (syntax & std lib), **Project Engineering** (scaffolding & build), **Domain Specialized** (HTTP, crypto, JSON, concurrency, testing, graphics), and **Quality & Style** (review & guidelines). Each skill is a self-contained `SKILL.md` file that AI agents load on-demand.
+This package includes **15 skills** organized into five layers: **Core Language**, **Project Engineering**, **Java Migration**, **Domain Specialized**, and **Quality & Style**. Each skill is a self-contained package that AI agents load on demand.
 
 ## 📦 Install
 
@@ -30,7 +30,7 @@ npx skills add full-stack-skills/zig-skills
 
 Or install specific skills: `npx skills add full-stack-skills/zig-skills --skill <skill-name>`
 
-## 🎯 Skills (13) by Layer
+## 🎯 Skills (15) by Layer
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -44,7 +44,12 @@ Or install specific skills: `npx skills add full-stack-skills/zig-skills --skill
 │  zig-project-structure  Project scaffolding + spec checks    │
 │  zig-build-system ────── Build.zig, modules, cross-compile   │
 ├──────────────────────────────────────────────────────────────┤
-│              Layer 3: Domain Specialized                     │
+│              Layer 3: Java Migration                         │
+│                                                              │
+│  zig-java-migration ───── lossless Java contract migration   │
+│  zig-java-migration-testing  full test/assets/diff parity    │
+├──────────────────────────────────────────────────────────────┤
+│              Layer 4: Domain Specialized                     │
 │                                                              │
 │  HTTP        zig-http ─────── std.http, WebSocket            │
 │  Crypto      zig-crypto ───── std.crypto, hash, AEAD         │
@@ -54,7 +59,7 @@ Or install specific skills: `npx skills add full-stack-skills/zig-skills --skill
 │  Graphics    zig-raylib ───── raylib 5.5 game dev            │
 │  Multimedia  zig-sdl3-bindings  SDL3 multimedia              │
 ├──────────────────────────────────────────────────────────────┤
-│              Layer 4: Quality & Style                        │
+│              Layer 5: Quality & Style                        │
 │                                                              │
 │  zig-code-review  Code review for style & correctness        │
 │  zig-tiger-style  TigerStyle coding guidelines               │
@@ -77,6 +82,8 @@ zig-skills/
 │   ├── zig-http/                   # HTTP networking
 │   ├── zig-json/                   # JSON & ZON data handling
 │   ├── zig-project-structure/      # Scaffolding & spec checker
+│   ├── zig-java-migration/         # Lossless Java-to-Zig migration
+│   ├── zig-java-migration-testing/ # Source tests/assets and differential parity
 │   ├── zig-testing/                # Testing & debugging
 │   ├── zig-tiger-style/            # Tiger Style guidelines
 │   ├── zig-raylib/                 # raylib-zig ecosystem skill
@@ -97,6 +104,8 @@ zig-skills/
 - Maintains a complete offline `references/` set and local `examples/` so the skill works without live fetching
 
 `skills/zig-0.15/` is retained as a **previous-generation aggregate skill** (Zig 0.15.x) and as the source of the local reference corpus. It remains useful for compatibility with older codebases and as supplemental reference material.
+
+The `zig-java-migration` and `zig-java-migration-testing` pair applies the same lossless source-contract and complete differential rules as the Rust migration pair while loading Zig-specific language, build, testing, allocator, target, and review skills. This naming profile is also reserved for future `kotlin-java-*` and `swift-java-*` pairs in their own target-language packages.
 
 The `zig-code-review`, `zig-tiger-style`, `zig-project-structure`, and `zig-build-system` skills cover project quality and engineering; `zig-http`, `zig-crypto`, `zig-json`, `zig-concurrency`, and `zig-testing` are domain-specific standard library deep-dives; while `zig-raylib` and `zig-sdl3-bindings` cover the leading Zig graphics/game development ecosystem libraries.
 

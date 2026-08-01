@@ -10,7 +10,7 @@
 
 [English](./README.md) | 简体中文
 
-[简介](#-简介) · [安装](#-安装) · [技能列表](#-技能列表-13) · [仓库布局](#-仓库布局) · [关系说明](#-关系说明) · [官方来源](#-官方来源) · [支持的智能体](#-支持的智能体) · [生态](#-生态)
+[简介](#-简介) · [安装](#-安装) · [技能列表](#-技能列表-15) · [仓库布局](#-仓库布局) · [关系说明](#-关系说明) · [官方来源](#-官方来源) · [支持的智能体](#-支持的智能体) · [生态](#-生态)
 
 </div>
 
@@ -20,7 +20,7 @@
 
 **Zig 技能** 是一组面向 Zig 编程语言及其生态的 AI 编码智能体技能，属于 [Full Stack Skills](https://github.com/partme-ai/full-stack-skills) 生态，由 [PartMe.AI](https://github.com/partme-ai) 维护。
 
-本包包含 **13 个技能**，按四个层级组织：**核心语法**（语言与标准库）、**项目工程**（脚手架与构建）、**专项技能**（HTTP、加密、JSON、并发、测试、图形）、**质量风格**（审查与编码规范）。每个技能是独立的 `SKILL.md` 文件，AI 智能体按需加载。
+本包包含 **15 个技能**，按五个层级组织：**核心语法**、**项目工程**、**Java 迁移**、**专项技能**、**质量风格**。每个技能由智能体按需加载。
 
 ## 📦 安装
 
@@ -30,7 +30,7 @@ npx skills add full-stack-skills/zig-skills
 
 或安装特定技能：`npx skills add full-stack-skills/zig-skills --skill <skill-name>`
 
-## 🎯 技能列表 (13) 按层级
+## 🎯 技能列表 (15) 按层级
 
 ```
 ┌──────────────────────────────────────────────────────────┐
@@ -44,7 +44,12 @@ npx skills add full-stack-skills/zig-skills
 │  zig-project-structure  ← 项目创建 + 合规检查             │
 │  zig-build-system ────── ← build.zig 深度专项             │
 ├──────────────────────────────────────────────────────────┤
-│              Layer 3: 专项技能 (Domain)                   │
+│              Layer 3: Java 迁移 (Migration)              │
+│                                                          │
+│  zig-java-migration ───── Java 合同无损迁移              │
+│  zig-java-migration-testing  全量测试/资产/差分一致       │
+├──────────────────────────────────────────────────────────┤
+│              Layer 4: 专项技能 (Domain)                   │
 │                                                          │
 │  网络         zig-http ─────── std.http, WebSocket       │
 │  安全         zig-crypto ──── std.crypto, hash, AEAD     │
@@ -54,7 +59,7 @@ npx skills add full-stack-skills/zig-skills
 │  游戏         zig-raylib ──── raylib 5.5                  │
 │  多媒体       zig-sdl3-bindings  SDL3                     │
 ├──────────────────────────────────────────────────────────┤
-│              Layer 4: 质量风格 (Quality)                  │
+│              Layer 5: 质量风格 (Quality)                  │
 │                                                          │
 │  zig-code-review  ← 代码审查                              │
 │  zig-tiger-style  ← TigerStyle 编码规范                   │
@@ -77,6 +82,8 @@ zig-skills/
 │   ├── zig-http/                   # HTTP 网络编程
 │   ├── zig-json/                   # JSON / ZON 数据处理
 │   ├── zig-project-structure/      # 项目结构生成与检查
+│   ├── zig-java-migration/         # Java → Zig 无损迁移
+│   ├── zig-java-migration-testing/ # 源测试/资产与完整差分
 │   ├── zig-testing/                # 测试与调试
 │   ├── zig-tiger-style/            # Tiger Style 指南
 │   ├── zig-raylib/                 # raylib-zig 生态技能
@@ -97,6 +104,8 @@ zig-skills/
 - 维护完整的离线 `references/` 和本地 `examples/`，无需在线获取
 
 `skills/zig-0.15/` 保留作为**上一代综合技能**（Zig 0.15.x）和本地参考语料库来源，对旧代码兼容和补充参考仍有价值。
+
+`zig-java-migration` 与 `zig-java-migration-testing` 复用 Rust 迁移技能已经确立的源合同无损、测试资产原样复制和完整双实现差分规则，同时组合 Zig 语言、构建、测试、allocator、target 与代码审查技能。未来的 `kotlin-java-*`、`swift-java-*` 也使用相同命名与共享合同，但由各自目标语言技能包实现。
 
 `zig-code-review`、`zig-tiger-style`、`zig-project-structure` 和 `zig-build-system` 技能覆盖项目质量和工程实践；`zig-http`、`zig-crypto`、`zig-json`、`zig-concurrency` 和 `zig-testing` 是标准库领域的深度专项；而 `zig-raylib` 和 `zig-sdl3-bindings` 则覆盖了 Zig 主流图形/游戏开发生态库。
 

@@ -93,6 +93,7 @@ docs/_build
 **/.env.local
 **/.env.*.local
 *.json
+!skills/zig-java-migration-testing/assets/source-test-parity.json
 !cloud-agents-server/agents/maternal-recovery.json
 assets/personal-asset-index.json
 
