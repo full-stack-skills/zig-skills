@@ -1,5 +1,6 @@
 ---
 name: zig-code-review
+license: Apache-2.0
 description: Review Zig project code for style, correctness, and logic. Invoke when reviewing PRs/diffs, assessing project conventions, or requesting a Zig-focused code quality audit.
 ---
 

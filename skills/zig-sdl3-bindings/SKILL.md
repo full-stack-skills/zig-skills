@@ -1,5 +1,6 @@
 ---
 name: zig-sdl3-bindings
+license: Apache-2.0
 description: Zig bindings for SDL3 multimedia library. Use for cross-platform game development, graphics, audio, input handling. Covers windowing, rendering, GPU compute, events, gamepads, audio streams, networking. Emphasizes Zig-specific patterns like error handling with try/catch, defer for cleanup, custom allocator integration, callback wrappers, and fromSdl/toSdl type conversions.
 ---
 

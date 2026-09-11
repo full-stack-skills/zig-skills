@@ -1,5 +1,6 @@
 ---
 name: zig-java-migration-testing
+license: Apache-2.0
 description: Strict Java-to-Zig migration testing and completion firewall. Use when porting Java JUnit tests, parameterized cases, fixtures, resources, scripts, corpora, and golden data to Zig; building Java/Zig differential harnesses; auditing whether source tests were weakened or skipped; creating a whole-project Zig migration-test module; or adding Zig-specific allocator, error, ABI, target, concurrency, fuzz, load, and host tests after source parity.
 ---
 

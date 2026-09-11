@@ -1,5 +1,6 @@
 ---
 name: zig-concurrency
+license: Apache-2.0
 description: Zig 并发编程技能。涉及 std.Thread 的线程创建、同步原语（Mutex、RwLock、Condition、Semaphore、WaitGroup）、线程池和原子操作。在需要多线程或并行计算时调用。
 ---
 

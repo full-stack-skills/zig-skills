@@ -1,5 +1,6 @@
 ---
 name: zig-tiger-style
+license: Apache-2.0
 description: TigerStyle Zig coding guidelines — distilled from TigerBeetle's production codebase. Use whenever writing, reviewing, or refactoring Zig code, asking about Zig idioms, assertions, memory layout, naming conventions, code style, and API design.
 ---
 

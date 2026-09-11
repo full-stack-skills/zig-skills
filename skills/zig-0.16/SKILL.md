@@ -1,5 +1,6 @@
 ---
 name: zig-0.16
+license: Apache-2.0
 description: Up-to-date Zig 0.16.0 language and standard library skill. Use when writing, reviewing, debugging, or migrating Zig code, working with build.zig/build.zig.zon, std modules, comptime, C interop, and modern 0.16 APIs.
 ---
 

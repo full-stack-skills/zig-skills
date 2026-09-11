@@ -1,5 +1,6 @@
 ---
 name: zig-raylib
+license: Apache-2.0
 description: Zig bindings for raylib 5.5 game development library. Use when writing raylib games/applications in Zig, working with 2D/3D graphics, handling input, loading textures/sounds/models, or implementing game loops. Covers idiomatic Zig patterns for raylib including error handling with RaylibError, resource management with defer, Camera2D/Camera3D systems, collision detection, skeletal animation, shaders, PBR materials, and audio playback.
 ---
 

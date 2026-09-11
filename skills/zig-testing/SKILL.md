@@ -1,5 +1,6 @@
 ---
 name: zig-testing
+license: Apache-2.0
 description: Zig 测试与调试技能。涉及 std.testing 的断言、测试组织、内存泄漏检测、以及 std.debug 的日志、堆栈回溯。在需要编写测试、调试代码、诊断问题时调用。
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: zig-crypto
+license: Apache-2.0
 description: Zig 加密与安全技能。涉及 std.crypto 的哈希、AEAD 加密、数字签名、密钥交换、密码哈希、KDF 和安全随机数。在需要加解密数据、验证签名或安全存储密码时调用。
 ---
 

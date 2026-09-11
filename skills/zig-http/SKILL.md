@@ -1,5 +1,6 @@
 ---
 name: zig-http
+license: Apache-2.0
 description: Zig HTTP 网络编程技能。涉及 std.http 的客户端请求、服务端实现、WebSocket、TLS、连接池和压缩。在需要发起 HTTP 请求或搭建 HTTP 服务端时调用。
 ---
 

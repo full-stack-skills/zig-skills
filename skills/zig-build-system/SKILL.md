@@ -1,5 +1,6 @@
 ---
 name: zig-build-system
+license: Apache-2.0
 description: Zig 构建系统专项技能。涉及 build.zig 和 build.zig.zon 的编写、模块管理、依赖配置、交叉编译、C/C++ 集成、自定义构建步骤和测试配置。在需要配置或调试项目构建时调用。
 ---
 

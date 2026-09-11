@@ -1,5 +1,6 @@
 ---
 name: zig-json
+license: Apache-2.0
 description: Zig JSON 处理技能。涉及 std.json 和 std.zon 的解析、序列化、自定义序列化、流式处理。在需要处理 JSON/ZON 数据时调用。
 ---
 

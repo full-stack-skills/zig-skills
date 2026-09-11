@@ -1,5 +1,6 @@
 ---
 name: zig-java-migration
+license: Apache-2.0
 description: Evidence-driven, lossless Java-to-Zig migration and incomplete-port audit. Use when migrating a Java repository, module, framework, API, tests, fixtures, examples, or runtime behavior to Zig; when checking whether a Java-to-Zig port is actually complete; or when planning AgentScope Java to AgentScope Zig parity. Requires complete source-object and contract inventory, idiomatic Zig implementation, exact source-test preservation, differential verification, and explicit production-readiness evidence.
 ---
 

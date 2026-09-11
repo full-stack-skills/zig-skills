@@ -1,5 +1,6 @@
 ---
 name: zig-project-structure
+license: Apache-2.0
 description: Zig 项目结构全生命周期管理。创建项目骨架（exe/lib/多模块/带依赖）或检查已有项目的目录结构、文件命名、构建配置合规性，输出结构化报告。
 ---
 
