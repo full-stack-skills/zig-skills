@@ -1,5 +1,5 @@
 ---
-name: zig-0.15
+name: zig-0-15
 license: Apache-2.0
 description: Up-to-date Zig programming language patterns for version 0.15.x. Use when writing, reviewing, or debugging Zig code, working with build.zig and build.zig.zon files, or using comptime metaprogramming. Critical for avoiding outdated patterns from training data - especially build system APIs (root_module instead of root_source_file), I/O APIs (buffered writer pattern), container initialization (.empty/.init), allocator selection (DebugAllocator), and removed language features (async/await, usingnamespace).
 ---
@@ -429,8 +429,8 @@ Customization: specify output format (full code / diff / snippet).
 
 ## FAQ
 
-**Q: Should I use `zig-0.15` or `zig-0.16`?**
-A: For new projects, prefer `zig-0.16`. `zig-0.15` is retained for compatibility with existing 0.15 projects.
+**Q: Should I use `zig-0-15` or `zig-0.16`?**
+A: For new projects, prefer `zig-0.16`. `zig-0-15` is retained for compatibility with existing 0.15 projects.
 
 **Q: What is the biggest difference between 0.15 and 0.14?**
 A: The I/O API rewrite (std.io → std.Io) and the introduction of `root_module` in build.zig.

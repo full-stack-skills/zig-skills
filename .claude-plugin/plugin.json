@@ -10,8 +10,8 @@
   "repository": "https://github.com/full-stack-skills/zig-skills",
   "source": "./",
   "skills": [
-    "./skills/zig-0.15",
-    "./skills/zig-0.16",
+    "./skills/zig-0-15",
+    "./skills/zig-0-16",
     "./skills/zig-build-system",
     "./skills/zig-code-review",
     "./skills/zig-concurrency",
