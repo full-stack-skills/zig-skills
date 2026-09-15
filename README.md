@@ -36,8 +36,8 @@ Or install specific skills: `npx skills add full-stack-skills/zig-skills --skill
 ┌──────────────────────────────────────────────────────────────┐
 │              Layer 1: Core Language                         │
 │                                                              │
-│  zig-0.16 ──────── Primary skill, full language + std lib    │
-│  zig-0.15 ──────── Legacy compatibility (0.15.x)            │
+│  zig-0-16 ──────── Primary skill, full language + std lib    │
+│  zig-0-15 ──────── Legacy compatibility (0.15.x)            │
 ├──────────────────────────────────────────────────────────────┤
 │              Layer 2: Project Engineering                    │
 │                                                              │
@@ -71,8 +71,8 @@ Or install specific skills: `npx skills add full-stack-skills/zig-skills --skill
 ```text
 zig-skills/
 ├── skills/
-│   ├── zig-0.15/                   # Previous aggregate skill (0.15.x)
-│   ├── zig-0.16/                   # Current primary skill (0.16.0)
+│   ├── zig-0-15/                   # Previous aggregate skill (0.15.x)
+│   ├── zig-0-16/                   # Current primary skill (0.16.0)
 │   │   ├── examples/               # Offline quick-start examples
 │   │   └── references/             # 40+ std lib & language references
 │   ├── zig-build-system/           # Build system specialization
@@ -89,21 +89,21 @@ zig-skills/
 │   ├── zig-raylib/                 # raylib-zig ecosystem skill
 │   └── zig-sdl3-bindings/          # zig-sdl3 ecosystem skill
 ├── scripts/
-│   └── create_zig_016_skill.py     # Generator for zig-0.16 skill
+│   └── create_zig_016_skill.py     # Generator for zig-0-16 skill
 ├── README.md
 └── README.zh-CN.md
 ```
 
 ## 🧭 Relationship & Migration
 
-`skills/zig-0.16/` is the **preferred main skill** for current Zig work because it:
+`skills/zig-0-16/` is the **preferred main skill** for current Zig work because it:
 
 - Updates guidance to **Zig 0.16.0** (the latest stable release)
 - Keeps the same aggregate-skill shape the repository originally used
 - Adds strong **official source mapping** (language reference, std index, introduction)
 - Maintains a complete offline `references/` set and local `examples/` so the skill works without live fetching
 
-`skills/zig-0.15/` is retained as a **previous-generation aggregate skill** (Zig 0.15.x) and as the source of the local reference corpus. It remains useful for compatibility with older codebases and as supplemental reference material.
+`skills/zig-0-15/` is retained as a **previous-generation aggregate skill** (Zig 0.15.x) and as the source of the local reference corpus. It remains useful for compatibility with older codebases and as supplemental reference material.
 
 The `zig-java-migration` and `zig-java-migration-testing` pair applies the same lossless source-contract and complete differential rules as the Rust migration pair while loading Zig-specific language, build, testing, allocator, target, and review skills. This naming profile is also reserved for future `kotlin-java-*` and `swift-java-*` pairs in their own target-language packages.
 
@@ -111,7 +111,7 @@ The `zig-code-review`, `zig-tiger-style`, `zig-project-structure`, and `zig-buil
 
 ## 📖 Official Sources
 
-The `zig-0.16` main skill is grounded in these official documentation sources:
+The `zig-0-16` main skill is grounded in these official documentation sources:
 
 - [Zig Language Reference 0.16.0](https://ziglang.org/documentation/0.16.0/)
 - [Zig Introduction](https://ziglang.org/documentation/0.16.0/#Introduction)

@@ -1,5 +1,5 @@
 ---
-name: zig-0.16
+name: zig-0-16
 license: Apache-2.0
 description: Up-to-date Zig 0.16.0 language and standard library skill. Use when writing, reviewing, debugging, or migrating Zig code, working with build.zig/build.zig.zon, std modules, comptime, C interop, and modern 0.16 APIs.
 ---
@@ -543,7 +543,7 @@ Customization options:
 ## FAQ
 
 **Q: How does this skill differ from `zig-0.15`?**
-A: `zig-0.16` is the primary skill covering the latest stable 0.16.0 release. `zig-0.15` is retained as a legacy compatibility reference.
+A: `zig-0-16` is the primary skill covering the latest stable 0.16.0 release. `zig-0.15` is retained as a legacy compatibility reference.
 
 **Q: What if example code fails to compile?**
 A: Verify `zig version` outputs 0.16.0. If the version differs, some APIs may have changed. Use the Quick Fixes table to diagnose.
