@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zig JSON"
+  short_description: "Zig JSON 处理技能。涉及 std.json 和 std.zon 的解析、序列化、自定义序列化、流式处理。在需要处理…"
+  default_prompt: "使用 $zig-json，围绕“Zig JSON 处理技能。涉及 std.json 和 std.zon 的解析、序列化、自定义序列化、流式处理。在需要处理”处理我的当前需求。"

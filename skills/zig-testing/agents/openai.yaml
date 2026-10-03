@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zig Testing"
+  short_description: "Zig 测试与调试技能。涉及 std.testing 的断言、测试组织、内存泄漏检测、以及 std.debug 的日志、堆栈回…"
+  default_prompt: "使用 $zig-testing，围绕“Zig 测试与调试技能。涉及 std.testing 的断言、测试组织、内存泄漏检测、以及 std.debug 的日志、堆栈回”处理我的当前需求。"

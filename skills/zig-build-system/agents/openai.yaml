@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zig Build System"
+  short_description: "Zig 构建系统专项技能。涉及 build.zig 和 build.zig.zon 的编写、模块管理、依赖配置、交叉编译、C/…"
+  default_prompt: "使用 $zig-build-system，围绕“Zig 构建系统专项技能。涉及 build.zig 和 build.zig.zon 的编写、模块管理、依赖配置、交叉编译、C/”处理我的当前需求。"

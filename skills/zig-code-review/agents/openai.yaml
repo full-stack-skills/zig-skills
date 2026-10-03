@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zig Code Review"
+  short_description: "Review Zig project code for style, correctness, and logic"
+  default_prompt: "Use $zig-code-review to help with my current task: Review Zig project code for style, correctness, and logic."

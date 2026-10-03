@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zig Sdl3 Bindings"
+  short_description: "Zig bindings for SDL3 multimedia library"
+  default_prompt: "Use $zig-sdl3-bindings to help with my current task: Zig bindings for SDL3 multimedia library."

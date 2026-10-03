@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zig Crypto"
+  short_description: "Zig 加密与安全技能。涉及 std.crypto 的哈希、AEAD 加密、数字签名、密钥交换、密码哈希、KDF 和安全随机数…"
+  default_prompt: "使用 $zig-crypto，围绕“Zig 加密与安全技能。涉及 std.crypto 的哈希、AEAD 加密、数字签名、密钥交换、密码哈希、KDF 和安全随机数”处理我的当前需求。"

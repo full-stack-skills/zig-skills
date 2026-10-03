@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zig 0 15"
+  short_description: "Up-to-date Zig programming language patterns for version 0.15.x"
+  default_prompt: "Use $zig-0-15 to help with my current task: Up-to-date Zig programming language patterns for version 0.15.x."

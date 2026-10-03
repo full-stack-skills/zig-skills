@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zig 0 16"
+  short_description: "Up-to-date Zig 0.16.0 language and standard library skill"
+  default_prompt: "Use $zig-0-16 to help with my current task: Up-to-date Zig 0.16.0 language and standard library skill."
